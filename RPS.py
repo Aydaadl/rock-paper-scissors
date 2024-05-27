@@ -18,7 +18,8 @@ while True:
             print("you win") 
     else:
         print("computer win")
-    Elif you == "scissors": 
+        
+    elif you == "scissors": 
         if computer == "Paper":
             print("you win") 
     else:
