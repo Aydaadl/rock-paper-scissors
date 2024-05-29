@@ -1,10 +1,10 @@
 import random 
 
 while True:
-    you = input("Enter a choice(Rock, Paper, scissors):")
+    you = input("choice(Rock, Paper, scissors):")
     choose =  ["Rock","Paper","Scissors"]
     computer = random.choice(choose)
-    print("\n mychoose{you}, yourchoose{computer}\n")
+   
 
     if you == computer:
         print(f"both players selected{you}.equal")
@@ -16,18 +16,15 @@ while True:
     elif you == "Paper": 
         if computer == "Rock":
             print("you win") 
-    else:
-        print("computer win")
-        
+        else:
+            print("computer win")    
     elif you == "scissors": 
         if computer == "Paper":
             print("you win") 
     else:
-        print("computer win")
+            print("computer win")
        
     
     play_again = input("play again?(y/n):")
     if play_again.lower() != "yes":
         break
-        
-        
